@@ -1,0 +1,79 @@
+{
+  "query": [
+    {
+      "code": "Region",
+      "selection": {
+        "filter": "vs:A_LänRMI",
+        "values": [
+          "00",
+          "01",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "12",
+          "13",
+          "14",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25"
+        ]
+      }
+    },
+    {
+      "code": "Utbildning",
+      "selection": {
+        "filter": "vs:UtbildngruppE2-3N1",
+        "values": [
+          "33H",
+          "53A+55Q",
+          "53B",
+          "53E",
+          "53F",
+          "53I",
+          "53R",
+          "63Z",
+          "73B",
+          "73OX",
+          "83R",
+          "83T"
+        ]
+      }
+    },
+    {
+      "code": "KonAlder",
+      "selection": {
+        "filter": "vs:KönRegInd",
+        "values": [
+          "1",
+          "2",
+          "totalt"
+        ]
+      }
+    },
+    {
+      "code": "ContentsCode",
+      "selection": {
+        "filter": "item",
+        "values": [
+          "000003WI",
+          "000003WJ",
+          "000003WK"
+        ]
+      }
+    }
+  ],
+  "response": {
+    "format": "px"
+  }
+}
