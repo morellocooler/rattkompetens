@@ -121,7 +121,15 @@ df6 <-
       
 
 df <- merge(df5, df6, by=c("Region", "År", "Utbildning", "Kön"), all.x= TRUE, all.y= TRUE )
+df <- rename(df, Regionskod = Region_kod)
 
-  
-write.csv(df, "./data/rattkompetens.csv")
+lookup <- df %>%
+      filter(År=="2020", Utbildning == "Bygg", Kön == "totalt") %>%
+      select(Region, Regionskod) %>%
+      rename(Region_kod = Regionskod)
+
+dff <- left_join(df, lookup, by = "Region") 
+dff <- select(dff, -Regionskod)
+
+write.csv(dff, "./data/rattkompetens.csv")
 
